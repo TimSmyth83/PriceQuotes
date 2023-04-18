@@ -4,17 +4,12 @@ using PriceQuotes.Common;
 using System.Text.Json;
 
 
-
-
-
-
 var url = "https://localhost:7208/quoteHub";
 
 var hubConnection = new HubConnectionBuilder()
                          .WithUrl(url)
                          .Build();
 Random rnd = new Random();
-
 
 int timekey1 = 0;
 int timekey2 = 0;
